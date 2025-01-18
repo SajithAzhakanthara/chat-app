@@ -24,6 +24,10 @@ const NotificationDropdownContent = () => {
                                 <p className="notification-dropdown-content__notification--right-message">
                                 <b>Judy Nguyen</b> sent you a friend request.
                                 </p>
+                                <div className="notification-dropdown-content__notification--right-button notification-dropdown-content__notification--right-button-group-outer">
+                                    <button className="button__blue">Accept</button>
+                                    <button className="button__red">Delete</button>
+                                </div>
                             </div>
                             <div className="notification-dropdown-content__notification--right-left">
                                 <p className="notification-dropdown-content__notification--right-message-time">Just now</p>
@@ -39,15 +43,55 @@ const NotificationDropdownContent = () => {
                         <div className="notification-dropdown-content__notification--right-inner">
                             <div className="notification-dropdown-content__notification--right-right">
                                 <p className="notification-dropdown-content__notification--right-message">
-                                <b>Judy Nguyen</b> sent you a friend request.
+                                wish <b>Amanda Reed</b> a happy birthday (Nov 12)
                                 </p>
+                                <div className="notification-dropdown-content__notification--right-birthday-button-wrap">
+                                    <button>Say happy birthday 🎂</button>
+                                </div>
                             </div>
                             <div className="notification-dropdown-content__notification--right-left">
-                                <p className="notification-dropdown-content__notification--right-message-time">Just now</p>
+                                <p className="notification-dropdown-content__notification--right-message-time">1hr</p>
                             </div>
                         </div>
                     </div>
                 </Link>
+                <Link href="#" className="notification-dropdown-content__notification--inner">
+                    <div className="notification-dropdown-content__notification--left">
+                        <div className="notification-dropdown-content__notification--avatar notification-dropdown-content__notification--avatar-no-image" style={{backgroundColor:'#0cbc87'}}>WB</div>
+                    </div>
+                    <div className="notification-dropdown-content__notification--right">
+                        <div className="notification-dropdown-content__notification--right-inner">
+                            <div className="notification-dropdown-content__notification--right-right">
+                                <p className="notification-dropdown-content__notification--right-message">
+                                Webestica has 15 like and 1 new activity
+                                </p>
+                            </div>
+                            <div className="notification-dropdown-content__notification--right-left">
+                                <p className="notification-dropdown-content__notification--right-message-time">1hr</p>
+                            </div>
+                        </div>
+                    </div>
+                </Link>
+                <Link href="#" className="notification-dropdown-content__notification--inner">
+                    <div className="notification-dropdown-content__notification--left">
+                        <div className="notification-dropdown-content__notification--avatar" style={{backgroundImage:'url(/profile-image/bootstrap-profile-image.svg)'}}></div>
+                    </div>
+                    <div className="notification-dropdown-content__notification--right">
+                        <div className="notification-dropdown-content__notification--right-inner">
+                            <div className="notification-dropdown-content__notification--right-right">
+                                <p className="notification-dropdown-content__notification--right-message">
+                                <b>Bootstrap in the news:</b> The search giant’s parent company, Alphabet, just joined an exclusive club of tech stocks.
+                                </p>
+                            </div>
+                            <div className="notification-dropdown-content__notification--right-left">
+                                <p className="notification-dropdown-content__notification--right-message-time">4hr</p>
+                            </div>
+                        </div>
+                    </div>
+                </Link>
+            </div>
+            <div className="notification-dropdown-content__footer">
+                <button className="button__blue--light">See all incoming activity</button>
             </div>
         </div>
     )

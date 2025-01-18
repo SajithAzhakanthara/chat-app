@@ -1,0 +1,57 @@
+.profile-icon-dropdown-content {
+    &__inner {
+        padding: 10px;
+    }
+    &__header {
+        display: flex;
+        align-items:center;
+        gap:10px;
+    }
+    &__profile-image {
+        width:48px;
+        height:48px;
+        border-radius: 50%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &__profile-name {
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+    &__profile-designation {
+        font-size: 13px;
+        margin: 0;
+        color:#676a79;
+    }
+    &__view-profile-button-outer {
+        text-align: center;
+        margin-top: 10px;
+    }
+    &__view-profile-button {
+        display: block;
+    }
+    &__menu {
+        list-style: none;
+        padding: 0;
+        margin: 10px 0 0;
+    }
+    &__menu-item {
+        padding: 6px 0;
+    }
+    &__menu-link {
+        display:flex;
+        align-items:center;
+        gap:10px;
+        color:#676a79;
+        text-decoration:none;
+        font-size: 14px;
+    }
+    &__logout-button {
+        width:100%;
+    }
+    &__logout-button-wrap {
+        margin-top: 15px;
+    }
+}

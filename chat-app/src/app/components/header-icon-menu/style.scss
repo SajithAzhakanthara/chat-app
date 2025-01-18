@@ -23,4 +23,18 @@
             border:1px solid #0000000f;
         }
     }
+    &__profile-dropdown {
+        .dropdown-menu {
+            width:240px;
+            padding:0;
+            box-shadow: 0 1rem 3rem rgba(83, 88, 93, 0.15);
+            border:1px solid #0000000f;
+        }
+    }
+    &__profile-picture {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
 }

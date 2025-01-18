@@ -6,6 +6,13 @@
         padding: 15px;
         border-bottom:1px solid #0000000f;
     }
+    &__footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        border-top:1px solid #0000000f; 
+    }
     &__clear-all-button {
         padding: 0;
         background-color: transparent;
@@ -28,12 +35,13 @@
         &--inner {
             display: flex;
             border-radius: 5px;
-            padding: 10px 10px 10px 15px;
+            padding: 10px 10px 10px 10px;
             gap:10px;
             margin-bottom: 10px;
             text-decoration:none;
             &--unseen {
                 background-color: #eef0f2;
+                padding-left: 15px;
             }
         }
         &--left {
@@ -48,8 +56,16 @@
             height:48px;
             border-radius: 50%;
             background-size: cover;
-            background-position: 100%;
+            background-position: center;
             background-repeat: no-repeat;
+        }
+        &--avatar-no-image {
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            font-size: 15px;
+            font-weight:500;
+            color:#fff;
         }
         &--right-message {
             font-size: 13px;
@@ -61,6 +77,31 @@
             color:#676a79;
             margin: 0;
             white-space: nowrap;
+        }
+        &--right-button {
+            margin-top: 10px;
+        }
+        &--right-button-group-outer {
+            display:flex;
+            align-items:center;
+            gap:15px;
+        }
+        &--right-birthday-button-wrap {
+            margin-top: 10px;
+            button {
+                padding: 4px 12.8px;
+                border-radius: 3px;
+                border:1px solid #e1e4e6;
+                font-size: 13px;
+                color:#676a79;
+                background-color: transparent;
+                transition:all ease 0.5s;
+                &:hover {
+                    background-color: #e1e4e6;
+                    border-color:#e1e4e6;
+                    transition:all ease 0.5s;
+                }
+            }
         }
     }
 }
