@@ -1,0 +1,31 @@
+.searchbar {
+    position:relative;
+    &__input {
+        height:40px;
+        border-radius: 5px;
+        background-color: #eef0f2;
+        border:1px solid #e1e4e6;
+        padding-left: 40px;
+        width:100%;
+        font-size: 14px;
+        &:focus {
+            border:1px solid #0f6fec;
+            box-shadow: none;
+            outline:none;
+        }
+        &:focus-visible {
+            outline:none;
+        }
+        &::placeholder {
+            font-size: 14px;
+        }
+    }
+    &__icon {
+        position:absolute;
+        left:10px;
+        top:50%;
+        transform:translateY(-50%);
+        color:#676a79;
+        font-size: 16px;
+    }
+}

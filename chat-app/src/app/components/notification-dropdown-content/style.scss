@@ -1,0 +1,66 @@
+.notification-dropdown-content {
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+        border-bottom:1px solid #0000000f;
+    }
+    &__clear-all-button {
+        padding: 0;
+        background-color: transparent;
+        border:0;
+        font-size: 13px;
+        color:#0f6fec;
+    }
+    &__heading {
+        font-size:15px;
+        font-weight:500;
+        margin:0px;
+    }
+    &__left {
+        display:flex;
+        align-items: center;
+        gap:10px;
+    }
+    &__notification {
+        padding: 10px;
+        &--inner {
+            display: flex;
+            border-radius: 5px;
+            padding: 10px 10px 10px 15px;
+            gap:10px;
+            margin-bottom: 10px;
+            text-decoration:none;
+            &--unseen {
+                background-color: #eef0f2;
+            }
+        }
+        &--left {
+            position:relative;
+        }
+        &--right-inner {
+            display: flex;
+            gap: 10px;
+        }
+        &--avatar {
+            width:48px;
+            height:48px;
+            border-radius: 50%;
+            background-size: cover;
+            background-position: 100%;
+            background-repeat: no-repeat;
+        }
+        &--right-message {
+            font-size: 13px;
+            color:#676a79;
+            margin: 0;
+        }
+        &--right-message-time {
+            font-size: 13px;
+            color:#676a79;
+            margin: 0;
+            white-space: nowrap;
+        }
+    }
+}

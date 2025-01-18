@@ -1,0 +1,26 @@
+.header-icon-menu {
+    display: flex; 
+    align-items: center;
+    gap: 10px;
+    &__button {
+        position:relative;
+        &--status {
+            display: inline-block;
+            position: absolute;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: #d62937;
+            top:-1px;
+            right:-1px;
+        }
+    }
+    &__notification-dropdown {
+        .dropdown-menu {
+            width:350px;
+            padding:0;
+            box-shadow: 0 1rem 3rem rgba(83, 88, 93, 0.15);
+            border:1px solid #0000000f;
+        }
+    }
+}
